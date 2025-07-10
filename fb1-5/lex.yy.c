@@ -446,7 +446,7 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "fb1-5.l"
 #line 2 "fb1-5.l"
-# include "fb1-5.tab.h"
+#include "fb1-5.tab.h"
 #line 450 "lex.yy.c"
 #line 451 "lex.yy.c"
 
@@ -767,27 +767,27 @@ YY_RULE_SETUP
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 14 "fb1-5.l"
+#line 13 "fb1-5.l"
 { return EOL; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 15 "fb1-5.l"
+#line 14 "fb1-5.l"
 
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 16 "fb1-5.l"
+#line 15 "fb1-5.l"
 { /* ignore white space */ }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 17 "fb1-5.l"
-{ yyerror("Mystery character %c\n", *yytext); }
+#line 16 "fb1-5.l"
+{ fprintf(stderr, "Mystery character %c\n", *yytext); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 18 "fb1-5.l"
+#line 17 "fb1-5.l"
 ECHO;
 	YY_BREAK
 #line 793 "lex.yy.c"
@@ -1795,6 +1795,6 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 18 "fb1-5.l"
+#line 17 "fb1-5.l"
 
 
